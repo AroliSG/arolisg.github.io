@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+.navigator {
+    display: flex;
+    position: sticky;
+    top:0;
+    width: 95%;
+    justify-content: space-between;
+    padding-inline: 15px;
+    /*border-bottom: .1px solid;*/
+}
+
+.nav-group-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.mini2 {
+    width: 50%;
+}
+
+.mini {
+    transition-duration: 1s;
+    padding: 25px;
+}
+
+.download {
+    width: 200px;
+    height: 70spx;
+}
+
+.mini:hover {
+    scale: 1.2;
+}
+
+.myname {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.aboutme {
+    color:darkgray;
+}
+
+.icon {
+    padding-right: 10px;
+    font-size: 25px;
+}
