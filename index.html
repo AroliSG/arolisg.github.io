@@ -16,6 +16,8 @@
 
         <!-- js files-->
         <script src="./js/index.js"></script>
+        <script src="./js/createElements.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <!-- js files -->
 
         <!-- title -->
@@ -40,14 +42,14 @@
     <body>
         <h1>ABOUT ME</h1>
         <div class="container">
-            <div class="mini2">
+            <div style="width: 50%;">
                 <p class="myname">Aroly Reyes, 22 Years old</p>
                 <p class="aboutme">
                     Enthusiast ready to start writing for you. Open to new ideas and new languages to be learn. I love to learn new things. Perfect fit to work with team, hire me today!.
                     I'm from Dominican Republic but currently staying and living at Canada. Do not hesitate to write me.
                 </p>
             </div>
-            <div class="mini2">
+            <div style="width: 50%;">
                 <p class="myname">Fullstack Developer</p>
                 <p class="aboutme">
                     As an enthusiast, myself decide to go through the hardest road of programming. But successfully learning and working with various programming language.
@@ -55,19 +57,19 @@
             </div>
         </div>
 
-        <div class="container">
-            <p class="myname">Discord Bot Architect</p>
-            <div>
-                <p class="aboutme">
-                    Personal Project based on discord bot, which aims you to create basic bots 'at the moment', to interact with them very easily,
-                    giving you the opportunities to logs and auto mod your server at anytime with zero fees.
+        <div class="repos_container">
+            <div class="repos_line"></div>
+            <div id="repos" class="repos">
+            </div>
+        </div>
 
-                    very cool app try it. It is available on google play
-                </p>
-                <img
-                    class="download"
-                    src="./img/googleplay.png"
-                />
+        <div class="loader">
+            <div class="triangle-parents">
+                <div class="triangles" style="border-width: 50px 50px 0px 50px; border-color: white transparent transparent transparent;">
+
+                </div>
+                <div class="triangles" style="border-width: 0px 50px 50px 50px; border-color: transparent transparent white transparent;"></div>
+                </div>
             </div>
         </div>
 

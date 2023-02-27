@@ -1,16 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: #282828;
+    background-color: var(--background);
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
 }
 
 p {
     margin: 0;
+}
+
+.triangles {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition-duration: 200ms;
+}
+.triangle-parents {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    top: 5%;
+}
+
+.loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--background);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .navigator {
@@ -44,7 +81,6 @@ p {
     align-items: center;
 }
 
-
 .img {
     width: 50px;
     height: 50px;
@@ -52,10 +88,7 @@ p {
     margin-right: 15px;
     margin-top: 20px;
     object-fit: cover;
-}
-
-.mini2 {
-    width: 50%;
+    transition-delay: 1s;
 }
 
 .mini {
@@ -63,10 +96,79 @@ p {
     padding: 25px;
 }
 
+.repos_line {
+    position: absolute;
+    width: 15px;
+    height: 99%;
+    background-color: var(--background);
+    z-index: 1;
+}
+
+.repos-circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    left: -50%;
+}
+
+.repos {
+    display: block;
+}
+
+.repos-name {
+    font-size: 30px;
+    margin:0px;
+    margin-inline: 15px;
+}
+
+.repos-body {
+    font-size: 20px;
+    color:gray;
+    margin: 0px;
+    margin-inline: 15px;
+}
+
+.boxes-items {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    height: 300px;
+    width: 70vw;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition-duration: 2s;
+    justify-content: center;
+}
+
+.repos_container {
+    position: relative;
+    display: flex;
+    background-color: var(--boxes);
+    border-radius: 10px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .download {
     width: 200px;
-    height: 70spx;
+    height: 60px;
+    margin: 15px;
 }
+
+.download:hover {
+   scale: 1.1;
+}
+
 
 .mini:hover {
     scale: 1.2;
